@@ -31,14 +31,13 @@ function storeTask(task) {
 }
 
 function loadTaskElement(task) {
-    let taskHtml = "<li>";
-
-    taskHtml += `Task Name: ${task.name}`;
-    taskHtml += `Due Date: ${task.date}`;
-    taskHtml += `Urgency: ${task.urgency}`;
-    taskHtml += "</li>";
-
-    return taskHtml;
+    return `
+        <li class="task-item">
+            <p><strong>Task Name:</strong> ${task.name}</p>
+            <p><strong>Due Date:</strong> ${task.date}</p>
+            <p><strong>Urgency:</strong> ${task.urgency}</p>
+        </li>
+    `;
 }
 
 function loadTasks() {
