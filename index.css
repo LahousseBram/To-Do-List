@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 10rem;
+}
+
+form input, select {
+    margin-bottom: 1rem;
+}
+
+option:hover {
+    background-color: transparent;
+}
+
+option:first-child {
+    background-color: green;
+    color: white;
+}
+
+option:nth-child(n+2) {
+    background-color: yellow;
+}
+
+option:nth-child(n+3) {
+    background-color: orange;
+    color: white;
+}
+
+option:nth-child(n+4) {
+    background-color: red;
+    color: white;
+}
