@@ -46,9 +46,10 @@ function loadTasks() {
     const $taskList = document.querySelector("#tasks-list");
     let taskListHtml = $taskList.innerHTML;
 
-    for (let task of tasks) {
-        taskListHtml += loadTaskElement(task);
-    }
+    // Loop over stored tasks and append their formatted html to the list
+    Object.keys(tasks).forEach((key) => {
+        taskListHtml += loadTaskElement(tasks[key]);
+    });
 
     $taskList.innerHTML = taskListHtml;
 }

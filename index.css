@@ -34,3 +34,10 @@ option:nth-child(n+4) {
     background-color: red;
     color: white;
 }
+
+.task-item {
+    background-color: beige;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+}
